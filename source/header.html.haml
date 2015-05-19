@@ -1,0 +1,8 @@
+.bar.bar-header
+  %h1.title Header
+
+.content.has-header.overflow-scroll
+  - %w[light stable positive calm balanced energized assertive royal dark].each do |color|
+    .padding-vertical
+      .bar.bar-header{class: "bar-#{color}"}
+        %h1.title= "bar-#{color}"
