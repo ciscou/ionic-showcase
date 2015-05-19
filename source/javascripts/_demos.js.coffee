@@ -2,8 +2,8 @@ $ ->
   $('body.body-content').on 'click', '.content a', (e) ->
     e.preventDefault()
 
-  $('body.body-buttons').on 'touchstart', '.content .button', (e) ->
+  $('body').on 'touchstart', '.button', (e) ->
     $(e.target).addClass('active')
 
-  $('body.body-buttons').on 'touchend', '.content .button', (e) ->
+  $('body').on 'touchend', '.button', (e) ->
     $(e.target).removeClass('active')

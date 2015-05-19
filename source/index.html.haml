@@ -4,7 +4,12 @@
 
 .content.has-header.overflow-scroll
   %div.list
-    - %w[header subheader content footer buttons].each do |page|
+    - %w[ |
+      header subheader content footer |
+      buttons block-buttons full-width-block-buttons |
+      icon-buttons |
+      buttons-in-headers clear-buttons-in-headers |
+    ].each do |page| |
       = link_to "#{page}.html", class: 'item item-icon-right' do
         = page.titleize
         %i.icon.ion-chevron-right

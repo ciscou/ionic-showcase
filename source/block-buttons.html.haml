@@ -1,0 +1,9 @@
+.bar.bar-header
+  .h1.title
+    Buttons
+
+.content.has-header.padding.overflow-scroll
+  - %w[light stable positive calm balanced energized assertive royal dark].each do |color|
+    %p
+      %button.button.button-block{class: "button-#{color}"}
+        = "button-#{color}"
