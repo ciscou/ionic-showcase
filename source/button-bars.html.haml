@@ -1,0 +1,13 @@
+.bar.bar-header
+  .button-bar
+    %a.button.activated First
+    %a.button Second
+    %a.button Third
+
+.content.has-header.padding.overflow-scroll
+  - %w[light stable positive calm balanced energized assertive royal dark].each do |color|
+    %p
+      .button-bar{class: "bar-#{color}"}
+        %a.button First
+        %a.button Second
+        %a.button Third
