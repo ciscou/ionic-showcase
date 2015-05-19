@@ -4,7 +4,7 @@
 
 .content.has-header.overflow-scroll
   %div.list
-    - %w[header subheader].each do |page|
+    - %w[header subheader content].each do |page|
       = link_to "#{page}.html", class: 'item item-icon-right' do
         = page.titleize
         %i.icon.ion-chevron-right
